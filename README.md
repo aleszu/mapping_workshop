@@ -57,6 +57,7 @@ This is... "selectingthe_geom_webmercator from each table. From the cholera_deat
 
 CartoCSS
 
+```
 /** bubble visualization */
 
 #cholera_deaths{
@@ -112,4 +113,5 @@ CartoCSS
 #cholera_deaths [ count <= 2] {
    marker-width: 6.0;
 }
+```
 
