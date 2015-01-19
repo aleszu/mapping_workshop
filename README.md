@@ -2,8 +2,8 @@
 This workshop is going to be fun fun fun :grinning: 
 
 ##Datasets:
-+Ambient air pollution by city and country 2014 from WHO: [here](http://www.who.int/phe/health_topics/outdoorair/databases/cities/en/) 
-+John Snow cholera deaths and water pumps dataset: [here](http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/)
+* Ambient air pollution by city and country 2014 from WHO: [here](http://www.who.int/phe/health_topics/outdoorair/databases/cities/en/) 
+* John Snow cholera deaths and water pumps dataset: [here](http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/)
 
 ##Ambient air quality map
 Download .xls file [here](http://www.who.int/entity/quantifying_ehimpacts/national/countryprofile/aap_pm_database_may2014.xls?ua=1)
@@ -21,7 +21,7 @@ In map view, enable Choropleth
 Enable hover infowindow and select country, PM2.5, PM10, and data source
 Back to data view to see null in geometry (talk about shapefiles)
 
-Bolivia 
+Bolivia :frog:
 ```
 {"type": "MultiPolygon", "coordinates": [[[[-65.19, -22.09], [-65.75, -22.11], [-66.22, -21.78], [-67.18, -22.82], [-67.88, -22.83], [-68.76, -20.41], [-68.44, -19.43], [-69.48, -17.64], [-69.5, -17.51], [-68.82, -16.34], [-69.42, -15.62], [-68.67, -12.5], [-69.57, -10.95], [-68.58, -11.11], [-66.63, -9.91], [-65.38, -9.7], [-64.99, -12.01], [-60.47, -13.81], [-60.16, -16.26], [-58.33, -16.28], [-58.4, -17.25], [-57.52, -18.2], [-58.16, -20.17], [-59.1, -19.35], [-61.74, -19.65], [-62.64, -22.24], [-63.94, -22], [-64.32, -22.87], [-64.59, -22.21], [-65.19, -22.09]]]]}
 ```
