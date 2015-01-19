@@ -2,8 +2,8 @@
 This workshop is going to be fun fun fun :grinning: 
 
 ##Datasets:
-Ambient air pollution by city and country 2014 from WHO: [here](http://www.who.int/phe/health_topics/outdoorair/databases/cities/en/) 
-John Snow cholera deaths and water pumps dataset: [here](http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/)
++Ambient air pollution by city and country 2014 from WHO: [here](http://www.who.int/phe/health_topics/outdoorair/databases/cities/en/) 
++John Snow cholera deaths and water pumps dataset: [here](http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/)
 
 ##Ambient air quality map
 Download .xls file [here](http://www.who.int/entity/quantifying_ehimpacts/national/countryprofile/aap_pm_database_may2014.xls?ua=1)
@@ -50,7 +50,7 @@ UNION ALL
 SELECT cartodb_id, the_geom_webmercator, NULL as count, 'pump' as layer FROM pumps
 ```
 
-This is... "selectingthe_geom_webmercator from each table. From the cholera_deaths table we are selecting count so that we can base our bubble size on the value. When we UNION tables we must have the same columns in each table, so for the pumps table we have to include a fake count column with a value of NULL in every row. Finally, We included a column in the results for both tables that indicates a name for the layer the row belongs to."
+This is... "selecting the_geom_webmercator from each table. From the cholera_deaths table we are selecting count so that we can base our bubble size on the value. When we UNION tables we must have the same columns in each table, so for the pumps table we have to include a fake count column with a value of NULL in every row. Finally, We included a column in the results for both tables that indicates a name for the layer the row belongs to."
 
 
 ##CartoCSS (documentation here)
