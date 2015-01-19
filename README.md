@@ -2,7 +2,7 @@
 This workshop is going to be fun fun fun :grinning: 
 
 ##Datasets:
-Ambient air pollution by city and country 2014 from WHO: [here](http://www.who.int/phe/health_topics/outdoorair/databases/cities/en/)
+Ambient air pollution by city and country 2014 from WHO: [here](http://www.who.int/phe/health_topics/outdoorair/databases/cities/en/) 
 John Snow cholera deaths and water pumps dataset: [here](http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/)
 
 ##Ambient air quality map
