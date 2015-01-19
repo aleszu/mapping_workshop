@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Presentation</title>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+<style type='text/css'>
+body {
+  font-family: 'Helvetica';
+  letter-spacing:-2px;
+  background:#333;
+  background-size:100%;
+  color:#fff;
+  margin:0;
+  padding:0;
+  font-weight:bold;
+}
+
+h1, h2, p {
+  margin:0;
+}
+
+li{
+font-family: 'Franklin Gothic';
+letter-spacing:-0px;
+font-size: 0.5em;
+}
+
+em, a {
+  font-style:normal;
+  color:#dd6600;
+}
+
+a {
+  background: #34d0e7;
+  color:#000;
+  text-decoration:none;
+}
+
+img {
+  width:100%;
+  background-repeat:no-repeat;
+}
+
+div {
+  cursor:pointer;
+  cursor:hand;
+  position:absolute;
+  top:0px;
+  left:0px;
+  padding:75px;
+  line-height:97%;
+}
+
+div.center {
+  text-align:center;
+}
+
+div.imageText {
+  text-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+</style><script type='text/javascript'>
+window.onload = function() {
+    var s = document.getElementsByTagName('div'), ti;
+    if (!s) return;
+    big = { current: 0, forward: fwd, reverse: rev, go: go, length: s.length };
+    function go(n) {
+        big.current = n;
+        var i = 1e3, e = s[n], t = parseInt(e.dataset.timeToNext || 0, 10);
+        document.body.className = e.dataset.bodyclass || '';
+        for (var k = 0; k < s.length; k++) s[k].style.display = 'none';
+        e.style.display = 'inline';
+        e.style.fontSize = i + 'px';
+        if (e.firstChild && e.firstChild.nodeName === 'IMG') {
+            document.body.style.backgroundImage = 'url(' + e.firstChild.src + ')';
+            e.firstChild.style.display = 'none';
+            if ('classList' in e) e.classList.add('imageText');
+        } else {
+            document.body.style.backgroundImage = '';
+            document.body.style.backgroundColor = e.style.backgroundColor;
+        }
+        if (ti !== undefined) window.clearInterval(ti);
+        if (t > 0) ti = window.setTimeout(fwd, (t * 1000));
+        while ((e.offsetWidth > window.innerWidth ||
+            e.offsetHeight > window.innerHeight) && i >= 0) {
+            e.style.fontSize = (i -= 2) + 'px';
+        }
+        e.style.marginTop = ((window.innerHeight - e.offsetHeight) / 2) + 'px';
+        if (window.location.hash !== n) window.location.hash = n;
+        document.title = e.textContent || e.innerText;
+    }
+    document.onclick = function() { go(++big.current % (s.length)); };
+    function fwd() { go(Math.min(s.length - 1, ++big.current)); }
+    function rev() { go(Math.max(0, --big.current)); }
+    document.onkeydown = function(e) {
+        if (e.which === 39 || e.which === 34 || e.which === 40) fwd();
+        if (e.which === 37 || e.which === 33 || e.which === 38) rev();
+    };
+    document.ontouchstart = function(e) {
+        var x0 = e.changedTouches[0].pageX;
+        document.ontouchend = function(e) {
+            var x1 = e.changedTouches[0].pageX;
+            if (x1 - x0 < 0) fwd();
+            if (x1 - x0 > 0) rev();
+        };
+    };
+    function parse_hash() {
+        return Math.max(Math.min(s.length - 1,
+            parseInt(window.location.hash.substring(1), 10)), 0);
+    }
+    if (window.location.hash) big.current = parse_hash() || big.current;
+    window.onhashchange = function() {
+        var c = parse_hash();
+        if (c !== big.current) go(c);
+    };
+    go(big.current);
+};
+</script></head>
+<body>
+<div>Designing good maps</div>
+<div>1. Why use <em>maps?</em></div>
+<div>Maps entice exploration</div>
+<div><img src="poverty.png" style="width:1000px;"></div>
+<div>Maps connect readers to places</div>
+<div><img src="delacroix.png" style="width:1000px;"></div>
+<div>Maps help tell a story</div>
+<div><iframe src="http://srogers.cartodb.com/viz/64f6c0f4-745d-11e4-b4e1-0e4fddd5de28/embed_map" frameborder="0" height="600px" width="1200px"></iframe></div>
+<div>Maps combine art <em>and</em><br /> science</div>
+<div><img src="parkinvienna.png" style="width:1000px;"></div>
+<div>Intersection of <em>G.I.S.</em> and<br /> graphic design</div>
+<div><img src="snow.png" style="width:1000px;"></div>
+<div>They are an interface with which to explore spatial data</div>
+<div><img src="ebola.png" style="width:1000px;"></div>
+<div>2. What goes into designing a map?</div>
+<div>Design principles
+    <ul>
+        <li>Less is always more, embrace negative space</li>
+        <li>Use hierarchy to convey importance, font size, weight, intensity</li>
+        <li>Use the grid, rule-of-thirds</li>
+        <li>Use two fonts, one serif, one sans serif</li>
+    </ul></div>
+<div>All this isn't to say you should <em>always</em> use a map</div>
+<div>Some maps make no sense</div>
+
+<div>Remember maps can mislead</div>
+
+<div>And some can be downright horrible</div> 
+<div><img src="noaa.png" style="width:1000px;"></div>
+<div>Before tackling a map, ask if your data should be mapped</div>
+<div>Thanks!</div>
+
