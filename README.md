@@ -9,19 +9,33 @@ Presentation [here](http://aleszu.github.io/mapping_workshop)
 
 ##Ambient air quality map
 Download .xls file [here](http://www.who.int/entity/quantifying_ehimpacts/national/countryprofile/aap_pm_database_may2014.xls?ua=1)
+
 Open in Excel or Numbers or LibreOffice or Open with Google Sheets
+
 (1) Go to countries sheet
+
 or (2) Go to cities sheet
+
 Copy entirety and paste into a new spreadsheet, name it and save it.
+
 Condense titles into one single row along the top
+
 Delete Region column
+
 Make sure we have data for 'Reference for air quality' column 
+
 If not, copy and paste from original .xls 
+
 Make sure it's clean (enough)
+
 Upload to CartoDB (automatically geocoding)
-In map view, enable Choropleth
+
+In map view, enable choropleth
+
 Enable hover infowindow and select country, PM2.5, PM10, and data source
+
 Back to data view to see null in geometry (talk about shapefiles)
+
 
 Bolivia :frog:
 ```
@@ -32,17 +46,27 @@ Find the multipolygon coordinates data [here](http://crschmidt.net/mapping/inter
 
 ##Design in mind
 Projections
+
 Data sources
+
 Point vs. Regional data
+
 Consider elements of design (leading and misleading, typography, palette, the color blind)
+
 
 ##John Snow map: How To with CartoDB
 import zip files 
+
 cholera deaths: http://storybench.org/presentations/cholera_deaths.zip
+
 pumps: http://storybench.org/presentations/pumps.zip
+
 bubble visualization
+
 radius 6 to 12, give or take
+
 retitle infowindow count to 'Deaths'
+
 
 SQL
 delete what's in there and add this.
