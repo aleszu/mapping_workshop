@@ -1,25 +1,51 @@
 # Nieman mapping workshop
+Following a brief presentation [here](http://aleszu.github.io/mapping_workshop) on design principles and digital cartography, we'll break into groups to play with data in CartoDB.
+
 This workshop is going to be fun fun fun :grinning: 
 
 ##Datasets:
 * Ambient air pollution by city and country 2014 from WHO: [here](http://www.who.int/phe/health_topics/outdoorair/databases/cities/en/) 
 * John Snow cholera deaths and water pumps dataset: [here](http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/)
 
-##Ambient air quality map
+##Design in mind
+Projections
+
+Data sources
+
+Point vs. Regional data
+
+Consider elements of design (leading and misleading, typography, palette, the color blind)
+
+
+#Ambient air quality map with CartoDB
 Download .xls file [here](http://www.who.int/entity/quantifying_ehimpacts/national/countryprofile/aap_pm_database_may2014.xls?ua=1)
+
 Open in Excel or Numbers or LibreOffice or Open with Google Sheets
-1. Go to countries sheet
-or 2. Go to cities sheet
+
+(1) Go to countries sheet
+
+or (2) Go to cities sheet
+
 Copy entirety and paste into a new spreadsheet, name it and save it.
+
 Condense titles into one single row along the top
+
 Delete Region column
+
 Make sure we have data for 'Reference for air quality' column 
+
 If not, copy and paste from original .xls 
+
 Make sure it's clean (enough)
+
 Upload to CartoDB (automatically geocoding)
-In map view, enable Choropleth
+
+In map view, enable choropleth
+
 Enable hover infowindow and select country, PM2.5, PM10, and data source
+
 Back to data view to see null in geometry (talk about shapefiles)
+
 
 Bolivia :frog:
 ```
@@ -28,19 +54,20 @@ Bolivia :frog:
 
 Find the multipolygon coordinates data [here](http://crschmidt.net/mapping/internet_users_2005.json.fixed "here") for Venezuela and input it. This is written in JSON. More granular coordinates can be found [here](https://github.com/AshKyd/geojson-regions/tree/master/data/countries/ne_110m_admin_0_countries.geo.json "here").
 
-##Design in mind
-Projections
-Data sources
-Point vs. Regional data
-Consider elements of design (leading and misleading, typography, palette, the color blind)
 
 ##John Snow map: How To with CartoDB
 import zip files 
+
 cholera deaths: http://storybench.org/presentations/cholera_deaths.zip
+
 pumps: http://storybench.org/presentations/pumps.zip
+
 bubble visualization
+
 radius 6 to 12, give or take
+
 retitle infowindow count to 'Deaths'
+
 
 SQL
 delete what's in there and add this.
@@ -112,4 +139,3 @@ This is... "selecting the_geom_webmercator from each table. From the cholera_dea
    marker-width: 6.0;
 }
 ```
-
