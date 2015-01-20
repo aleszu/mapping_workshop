@@ -1,6 +1,8 @@
 # Nieman mapping workshop
 This workshop is going to be fun fun fun :grinning: 
 
+Presentation [here](http://aleszu.github.io/mapping_workshop)
+
 ##Datasets:
 * Ambient air pollution by city and country 2014 from WHO: [here](http://www.who.int/phe/health_topics/outdoorair/databases/cities/en/) 
 * John Snow cholera deaths and water pumps dataset: [here](http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/)
@@ -8,8 +10,8 @@ This workshop is going to be fun fun fun :grinning:
 ##Ambient air quality map
 Download .xls file [here](http://www.who.int/entity/quantifying_ehimpacts/national/countryprofile/aap_pm_database_may2014.xls?ua=1)
 Open in Excel or Numbers or LibreOffice or Open with Google Sheets
-1. Go to countries sheet
-or 2. Go to cities sheet
+(1) Go to countries sheet
+or (2) Go to cities sheet
 Copy entirety and paste into a new spreadsheet, name it and save it.
 Condense titles into one single row along the top
 Delete Region column
