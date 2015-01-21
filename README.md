@@ -22,6 +22,8 @@ Download .xls file [here](http://www.who.int/entity/quantifying_ehimpacts/nation
 
 Open in Excel or Numbers or LibreOffice or Open with Google Sheets
 
+Cleaned spread(cheat)sheet [here](https://docs.google.com/spreadsheets/d/1nZrcL4bKvoqxLbT0jF4vD15CxGbXrUfCTF2yzoMKnFQ/pubhtml)
+
 (1) Go to countries sheet
 
 or (2) Go to cities sheet
