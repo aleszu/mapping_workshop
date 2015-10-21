@@ -3,6 +3,8 @@ Following a brief presentation [here](http://aleszu.github.io/mapping_workshop) 
 
 This workshop is going to be fun fun fun :grinning: 
 
+Presentation [here](http://aleszu.github.io/mapping_workshop)
+
 ##Datasets:
 * Ambient air pollution by city and country 2014 from WHO: [here](http://www.who.int/phe/health_topics/outdoorair/databases/cities/en/) 
 * John Snow cholera deaths and water pumps dataset: [here](http://blog.rtwilson.com/john-snows-cholera-data-in-more-formats/)
@@ -22,8 +24,11 @@ Download .xls file [here](http://www.who.int/entity/quantifying_ehimpacts/nation
 
 Open in Excel or Numbers or LibreOffice or Open with Google Sheets
 
+<<<<<<< HEAD
 Cleaned spread(cheat)sheet [here](https://docs.google.com/spreadsheets/d/1nZrcL4bKvoqxLbT0jF4vD15CxGbXrUfCTF2yzoMKnFQ/pubhtml)
 
+=======
+>>>>>>> master
 (1) Go to countries sheet
 
 or (2) Go to cities sheet
@@ -55,6 +60,18 @@ Bolivia :frog:
 ```
 
 Find the multipolygon coordinates data [here](http://crschmidt.net/mapping/internet_users_2005.json.fixed "here") for Venezuela and input it. This is written in JSON. More granular coordinates can be found [here](https://github.com/AshKyd/geojson-regions/tree/master/data/countries/ne_110m_admin_0_countries.geo.json "here").
+
+<<<<<<< HEAD
+=======
+##Design in mind
+Projections
+
+Data sources
+
+Point vs. Regional data
+
+Consider elements of design (leading and misleading, typography, palette, the color blind)
+>>>>>>> master
 
 
 ##John Snow map: How To with CartoDB
